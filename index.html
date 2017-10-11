@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- NOTE since directly invoking functions in below JS files that modify html content, will put it in body, instead of head
+    <script src="./script_debugger.js"></script> 
+    <script src="./script_declaration_expression.js"></script>
+    <script src="scopes/script_scopes.js"></script>
+-->
+    <script src="console/script_console.js"></script>
+    <script src="use_strict/script_use_strict.js"></script>
+    <script src="module_chaining_using_IIFE/script_Module4index_1.js"></script>
+    <script src="module_chaining_using_IIFE/script_Module4index_2.js"></script>
+</head>
+
+<body>
+    <h1>Hello JS things; </h1>
+
+    <div id="1">This content will be replaced by many functions</div>
+
+    <h3>JS console.log, console.error/warn/info/debug/trace - see script_console.js</h3>
+    <button onclick="demoConsoleFunc()">button4demoConsoleFunc - Click Me to replace contents of div of id 1 on top of page</button>
+
+    <h3>JS debugger; keyword - see script_debugger.js</h3>
+    <button onclick="myGlobalFunctionWithDebugger()">button4myGlobalFunctionWithDebugger - Click Me to replace contents of div of id 1 on top of page</button>
+
+    <h3>JS scopes; global scope, function(local) scope, leakage to global scope - see script_scopes.js</h3>
+    <button onclick="myGlobalFunc_A()">myGlobalFunc_A - Click Me to replace contents of div of id 1 on top of page</button>
+
+    <h2>JS strict mode - see use_strict/script_use_strict.js</h2>
+    <h2>JS IIFE (Immediately Invoked Function Expression)</h2>
+    <h2>JS Modules</h2>
+    <div>
+        <button onclick="Module4index.myPublicFunction_A()">button_A - Click Me to replace contents of below div of id 123</button>
+        <button onclick="Module4index.myPublicFunction_B()">button_B - Click Me to replace contents of below div of id 1234</button>
+        <button onclick="Module4index.myPublicFunction_B2()">button_B2 - Click Me to replace contents of below div of id 12345</button>
+    </div>
+
+
+    <div id="123">This content will be replaced by myPublicFunction_A</div>
+    <div id="1234">This content will be replaced by myPublicFunction_B</div>
+    <div id="12345">This content will be replaced by myPublicFunction_B2</div>
+
+    <!-- NOTE since directly invoking functions in below JS files that modify html content, will put it in body, instead of head -->
+    <script src="debugger/script_debugger.js"></script>
+    <script src="function_declaration_expression_IIFE/script_function_declaration_expression.js"></script>
+    <script src="scopes/script_scopes.js"></script>
+
+</body>
+
+</html>

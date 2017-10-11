@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- NOTE since directly invoking functions in below JS file that modify html content, will put it in body, instead of head
+    <script src="./script_scopes.js"></script>
+-->
+</head>
+
+<body>
+    <h1>Hello JS scopes; </h1>
+
+    <div id="1">This content will be replaced by function</div>
+
+    <h3>JS scopes; global scope, function(local) scope, leakage to global scope - see script_scopes.js</h3>
+    <button onclick="myGlobalFunc_A()">myGlobalFunc_A - Click Me to replace contents of div of id 1 on top of page</button>
+
+    <!-- NOTE since directly invoking functions in below JS files that modify html content, will put it in body, instead of head -->
+    <script src="./script_scopes.js"></script>
+
+</body>
+
+</html>
