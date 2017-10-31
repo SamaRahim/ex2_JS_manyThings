@@ -36,7 +36,10 @@ _myObj2['myStr2'] = "string2";
 for (var attrName in _myObj2) {
     console.log(attrName + ":" + _myObj2[attrName]);
 }
-
+// with ES5 you can also do loop over attributes of an object using forEach
+Object.keys(_myObj2).forEach(function(key, index) {
+    console.log('using forEach, index:%s, attrName:%s, attrValue:%s', index, key, _myObj2[key]);
+});
 
 // example object 3 - using "object initializer" ("object literal")
 var _myObj3 = {
