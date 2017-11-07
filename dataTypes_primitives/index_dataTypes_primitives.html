@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="./script_dataTypes_primitives.js"></script>
+</head>
+
+<body>
+    <h1>In JS, there are 6 primitive data types + objects + functions</h1>
+    <h2>6 primitive data types;</h2>
+    <pre>
+var my_undefined = undefined; // primitive "undefined"
+var my_null = null; // primitive null, which due to legacy reasons returns "object" when you do; typeof null
+
+var my_boolean = true; // primitive "boolean"
+
+var my_string = "string"; // primitive "string"
+var my_string_2 = 'string too'; // primitive "string" too
+
+var my_number = 123; // primitive "number"
+var my_number_2 = 123.456; // primitive "number" too
+var my_number_3 = NaN; // primitive "number" too
+var my_number_4 = Infinity; // primitive "number" too
+
+var my_symbol = Symbol(); // primitive 'symbol', introduced in ES6, which is basically ENUM of java, C#, C++
+var my_symbol_ANIMAL_DOG = Symbol("dog");
+var my_symbol_ANIMAL_CAT = Symbol("cat");
+    </pre>
+
+    <h2>objects</h2>
+    <pre>
+var my_object = { attr1: 'attr1Value', attr2: 'attr2Value' }; // "object"
+var my_object_new = new Date(); // "object"
+var my_object_array = [1, 2, 3, 4]; // arrays are "object" too
+    </pre>
+
+    <h2>functions</h2>
+    <pre>
+function MyFunctionDecleration() { console.log("MyFunctionDecleration executed") }; // "function"
+var my_function_expression = function() { console.log("my_function_expression executed") }; // "function"    
+    </pre>
+</body>
+
+</html>
